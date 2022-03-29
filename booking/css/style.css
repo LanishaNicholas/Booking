@@ -1,0 +1,187 @@
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+ul.nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:36px; line-height:36px;
+    background:#8fa998; /* you can change the backgorund color here. */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+ul.nav li {
+    border-right:1px solid #189b80; /* you can change the border color matching to your background color */
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;
+    color:#ccece6;
+    text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+    background:#086754;
+}
+
+.nav a.active {
+  font-weight: bold;
+  background-color: #086754;
+  color: #ccece6;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tableHeading{
+  text-align: center;
+  background-color: lightblue;
+}
+.hide{
+  display: none;
+}
+.textarea{
+  width: 50%;
+  height: 70px;
+}
+
+.form-submit-button form table tbody tr td input {
+     background:#0066A2;
+     color:white;
+     border-style:outset;
+     border-color:#0066A2;
+     height:50px;
+     width:100px;
+     font:bold15px arial,sans-serif;
+     text-shadow:none;
+}
+.navigation{
+  padding: 10px;
+}
+.navMenu{
+  cursor: pointer;
+}
+.completeBtn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.cancelBtn{
+  background-color: #af674c; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.btnaln{
+  float: left;
+  padding-right: 10px;
+}
+.success{
+  color: #4CAF50;
+  font-weight: bold;
+}
+.danger{
+  color: red;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.container {
+  background-color: #008CBA;
+  border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  position: relative;
+  overflow: hidden;
+  width: 758px;
+  max-width: 100%;
+  /*min-height: 480px;*/
+  margin-left: 241px;
+    margin-top: 100px;
+}
+.container1{
+  width: 777px;
+  height: 50px;
+}
+.msg{
+  text-align: center;
+}

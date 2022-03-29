@@ -1,0 +1,15 @@
+CREATE TABLE `booking`.`appointment` ( `app_id` INT NOT NULL AUTO_INCREMENT , `dr_id` INT NOT NULL , `app_date` DATE NOT NULL , `app_time` TIME NOT NULL , PRIMARY KEY (`app_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `booking`.`doctors` ( `dr_id` INT NOT NULL AUTO_INCREMENT , `dr_name` VARCHAR(100) NOT NULL , `dr_username` VARCHAR(100) NOT NULL , `dr_password` VARCHAR(100) NOT NULL , PRIMARY KEY (`dr_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `booking`.`patient_details` ( `pt_id` INT NOT NULL AUTO_INCREMENT , `app_id` INT NOT NULL , `pt_name` VARCHAR(100) NOT NULL , `pt_gender` BOOLEAN NOT NULL , `pt_phonenumber` VARCHAR(100) NOT NULL , `pt_comment` VARCHAR(100) NOT NULL , PRIMARY KEY (`pt_id`)) ENGINE = InnoDB;
+
+ALTER TABLE `appointment` ADD `app_status` BOOLEAN NOT NULL AFTER `app_time`;
+ALTER TABLE `appointment` CHANGE `app_status` `app_status` TINYINT(1) NOT NULL COMMENT '0 : In Quee, 1 : Finished';
+
+ALTER TABLE `appointment` CHANGE `app_date` `app_date` DATETIME NOT NULL;
+
+ALTER TABLE `appointment` CHANGE `app_time` `app_time` VARCHAR(100) NOT NULL;
+
+ALTER TABLE `patient_details` CHANGE `pt_gender` `pt_gender` TINYINT(1) NOT NULL COMMENT '0: male , 1:female';
+
