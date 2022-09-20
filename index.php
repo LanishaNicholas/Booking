@@ -133,9 +133,58 @@
                 </div>
                 
             </form>
-          
             <div id="message" class="hide">
               <h1>Appoinment Booked Successfully</h1>
+            </div>
+        </div>
+        <div class="container-fluid p-5 my-5 border">
+            <p class="h3 text-center">Our Departments</p>
+            <div class="row text-bg-color">
+                <div class="col p-3 m-5 border">
+                    <img src="img/pediatric.jpg" class="rounded mx-auto d-block" alt="Pediatric">
+                    <p class="h5 text-center mt-2">Pediatric</p>
+                    <p>
+                        A pediatrician is a doctor who focuses on the health of infants, children and young adults.Pediatric care starts at birth and lasts through a child’s 21st birthday.
+                    </p>
+                    
+                    <a href="#pediatricDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="pediatricDiv" class="collapse">
+                        <p> 
+                            Pediatric care starts at birth and lasts through a child’s 21st birthday or longer. 
+                            Pediatricians prevent, detect and manage physical, behavioral and developmental issues that affect children. Some pediatricians work in general practice. 
+                            Others specialize in treating children with specific health conditions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col p-3 m-5 border ">
+                    <img src="img/gynecology.jpg" class="rounded mx-auto d-block" alt="Gynecology">
+                    <p class="h5 text-center mt-2">Gynecology</p>
+                    <p>
+                        A gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. 
+                    </p>
+                    <a href="#gynecologyDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="gynecologyDiv" class="collapse">
+                        <p>
+                            They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain. They may also care for people with ovarian, cervical, and other reproductive cancers.
+                            Some gynecologists also practice as obstetricians, who give care during pregnancy and birth. If a gynecologist has expertise in obstetrics, they’re called an OB-GYN.
+                        </p>
+                    </div>
+                </div>
+                <div class="col p-3 m-5 border">
+                    <img src="img/gp.jpg" class="rounded mx-auto d-block" alt="GP">
+                    <p class="h5 text-center mt-2">General Physician</p>
+                    <p>
+                        General physicians only see patients who are referred to them by other doctors, usually by the patient's own general practitioner.
+                    </p>
+                    <a href="#gpDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="gpDiv" class="collapse">
+                        <p>
+                            General Physicians are highly trained specialists who provide a range of non-surgical health care to adult patients. 
+                            They care for difficult, serious or unusual medical problems and continue to see the patient until these problems have resolved or stabilised.
+                            Much of their work takes place with hospitalised patients and most general physicians also see patients in their consulting rooms.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
