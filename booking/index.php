@@ -178,13 +178,14 @@
             <p class="h3 text-center">Our Departments</p>
             <div class="row text-bg-color">
                 <div class="col p-3 m-5 border">
-                    <img src="img/pediatric.jpg" class="rounded mx-auto d-block" alt="Pediatric">
+                    <img src="img/pediatric.jpg" class="rounded mx-auto d-block zoom" alt="Pediatric">
                     <p class="h5 text-center mt-2">Pediatric</p>
                     <p>
                         A pediatrician is a doctor who focuses on the health of infants, children and young adults.Pediatric care starts at birth and lasts through a child’s 21st birthday.
                     </p>
                     
-                    <a href="#pediatricDiv" data-bs-toggle="collapse">Show more</a>
+                    <a href="#pediatricDiv" id="pediatricShow" data-bs-toggle="collapse">More...</a>
+                    <a href="#pediatricDiv" id="pediatricHide" class="hide"data-bs-toggle="collapse">Less...</a>
                     <div id="pediatricDiv" class="collapse">
                         <p> 
                             Pediatric care starts at birth and lasts through a child’s 21st birthday or longer. 
@@ -194,12 +195,13 @@
                     </div>
                 </div>
                 <div class="col p-3 m-5 border ">
-                    <img src="img/gynecology.jpg" class="rounded mx-auto d-block" alt="Gynecology">
+                    <img src="img/gynecology.jpg" class="rounded mx-auto d-block zoom" alt="Gynecology">
                     <p class="h5 text-center mt-2">Gynecology</p>
                     <p>
                         A gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. 
                     </p>
-                    <a href="#gynecologyDiv" data-bs-toggle="collapse">Show more</a>
+                    <a href="#gynecologyDiv" id="gynecologyShow" data-bs-toggle="collapse">More...</a>
+                    <a href="#gynecologyDiv" id="gynecologyLess" class="hide" data-bs-toggle="collapse">Less...</a>
                     <div id="gynecologyDiv" class="collapse">
                         <p>
                             They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain. They may also care for people with ovarian, cervical, and other reproductive cancers.
@@ -208,12 +210,13 @@
                     </div>
                 </div>
                 <div class="col p-3 m-5 border">
-                    <img src="img/gp.jpg" class="rounded mx-auto d-block" alt="GP">
+                    <img src="img/gp.jpg" class="rounded mx-auto d-block zoom" alt="GP">
                     <p class="h5 text-center mt-2">General Physician</p>
                     <p>
                         General physicians only see patients who are referred to them by other doctors, usually by the patient's own general practitioner.
                     </p>
-                    <a href="#gpDiv" data-bs-toggle="collapse">Show more</a>
+                    <a href="#gpDiv" id="gpShow" data-bs-toggle="collapse">More...</a>
+                    <a href="#gpDiv" id="gpHide" class="hide" data-bs-toggle="collapse">Less...</a>
                     <div id="gpDiv" class="collapse">
                         <p>
                             General Physicians are highly trained specialists who provide a range of non-surgical health care to adult patients. 
