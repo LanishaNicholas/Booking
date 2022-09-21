@@ -22,38 +22,72 @@
 
 </head>
 <body>
-    <div class="container-fluid py-5 bg-secondary">
-        <!-- <h1>Book Appointment</h1> -->
-        <p class="h1 text-white-50 text-center">Book Appointment</p>
+    <div class="container-fluid">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide1.jpg" alt="Los Angeles" class="d-block w-100"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide2.jpg" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Health</h3>
+                        <p>We care about your health!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/slide3.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!-- about the slide -->
+            <div class="container-fluid mt-3">
+                <h3>Health Care Center</h3>
+                <p>A healthcare center, health center, or community health center is one of a network of clinics staffed by a group of general practitioners and nurses providing healthcare services to people in a certain area.</p>
+            </div>
+        </div>
     </div>
     <div class="container-fluid-sm border">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" class="img-thumbnail" alt="HospitalLogo">
+                </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Public</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="view/doctorAccount.php">Doctor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Book Appointment</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="main">
-            <!-- <ul class="nav">
-                <li><a href="index.php" class="active">Public</a></li>
-                <li><a href="view/doctorAccount.php">Doctor</a></li>
-            </ul> -->
-          
+        <div class="main collapse" id="demo">
+            
              <form>
                 <table>
                     <tr>
@@ -132,9 +166,58 @@
                 </div>
                 
             </form>
-          
             <div id="message" class="hide">
               <h1>Appoinment Booked Successfully</h1>
+            </div>
+        </div>
+        <div class="container-fluid p-5 my-5 border">
+            <p class="h3 text-center">Our Departments</p>
+            <div class="row text-bg-color">
+                <div class="col p-3 m-5 border">
+                    <img src="img/pediatric.jpg" class="rounded mx-auto d-block" alt="Pediatric">
+                    <p class="h5 text-center mt-2">Pediatric</p>
+                    <p>
+                        A pediatrician is a doctor who focuses on the health of infants, children and young adults.Pediatric care starts at birth and lasts through a child’s 21st birthday.
+                    </p>
+                    
+                    <a href="#pediatricDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="pediatricDiv" class="collapse">
+                        <p> 
+                            Pediatric care starts at birth and lasts through a child’s 21st birthday or longer. 
+                            Pediatricians prevent, detect and manage physical, behavioral and developmental issues that affect children. Some pediatricians work in general practice. 
+                            Others specialize in treating children with specific health conditions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col p-3 m-5 border ">
+                    <img src="img/gynecology.jpg" class="rounded mx-auto d-block" alt="Gynecology">
+                    <p class="h5 text-center mt-2">Gynecology</p>
+                    <p>
+                        A gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. 
+                    </p>
+                    <a href="#gynecologyDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="gynecologyDiv" class="collapse">
+                        <p>
+                            They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain. They may also care for people with ovarian, cervical, and other reproductive cancers.
+                            Some gynecologists also practice as obstetricians, who give care during pregnancy and birth. If a gynecologist has expertise in obstetrics, they’re called an OB-GYN.
+                        </p>
+                    </div>
+                </div>
+                <div class="col p-3 m-5 border">
+                    <img src="img/gp.jpg" class="rounded mx-auto d-block" alt="GP">
+                    <p class="h5 text-center mt-2">General Physician</p>
+                    <p>
+                        General physicians only see patients who are referred to them by other doctors, usually by the patient's own general practitioner.
+                    </p>
+                    <a href="#gpDiv" data-bs-toggle="collapse">Show more</a>
+                    <div id="gpDiv" class="collapse">
+                        <p>
+                            General Physicians are highly trained specialists who provide a range of non-surgical health care to adult patients. 
+                            They care for difficult, serious or unusual medical problems and continue to see the patient until these problems have resolved or stabilised.
+                            Much of their work takes place with hospitalised patients and most general physicians also see patients in their consulting rooms.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
