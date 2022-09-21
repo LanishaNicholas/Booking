@@ -174,4 +174,30 @@ $(document).ready(function() {
 
     });
 
+    //Hide and show for show more and show less button
+    $("#pediatricShow").click(function(){
+        $("#pediatricShow").hide();
+        $("#pediatricHide").show();
+    });
+    $("#pediatricHide").click(function(){
+        $("#pediatricHide").hide();
+        $("#pediatricShow").show();
+    });
+    $("#gynecologyShow").click(function(){
+        $("#gynecologyShow").hide();
+        $("#gynecologyLess").show();
+    });
+    $("#gynecologyLess").click(function(){
+        $("#gynecologyLess").hide();
+        $("#gynecologyShow").show();
+    });
+    $("#gpShow").click(function(){
+        $("#gpShow").hide();
+        $("#gpHide").show();
+    });
+    $("#gpHide").click(function(){
+        $("#gpHide").hide();
+        $("#gpShow").show();
+    });
+
 });
